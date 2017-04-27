@@ -201,6 +201,18 @@ This command will also **"download" the full blockchain to your cloud machine be
 
 Depending on how far we went into the livenet, this could take several hours (or even a full day!). Be patient :)
 
+If you do not want session to get killed it might be a good idea to run 
+
+```
+nohup geth & 
+```
+
+you can allways go to 
+```
+tail -f f nohup.out
+```
+to find the console out of geth
+
 * You will know that **geth** has finishing catching up with (i.e. downloading) the blockchain when instead of importing - say - 256 blocks at a time 
 
 ```
